@@ -43,22 +43,21 @@ ElasticJob 已于 2020 年 5 月 28 日成为 [Apache ShardingSphere](https://sh
 - 作业治理
   - 失效转移
   - 错过作业重新执行
-  - 自巡检与自动修复
+  - 自诊断修复
 
-- 作业依赖
+- 作业依赖(TODO)
   - 基于有向无环图（DAG）的作业间依赖
   - 基于有向无环图（DAG）的作业分片间依赖
 
 - 作业开放生态
   - 可扩展的作业类型统一接口
   - 丰富的作业类型库，如数据流、脚本、HTTP、文件、大数据等
-  - 面向业务的作业接口，能够与 Spring 依赖注入 无缝对接
+  - 易于对接业务作业，能够与 Spring 依赖注入无缝整合
 
 - 可视化管控端
   - 作业管控端
   - 作业执行历史数据追踪
   - 注册中心管理
-
 
 ## [Release Notes](https://github.com/elasticjob/elastic-job/releases)
 
@@ -69,17 +68,17 @@ ElasticJob 已于 2020 年 5 月 28 日成为 [Apache ShardingSphere](https://sh
 ### 引入maven依赖
 
 ```xml
-<!-- 引入elastic-job-lite核心模块 -->
+<!-- 引入elasticjob-lite核心模块 -->
 <dependency>
     <groupId>org.apache.shardingsphere.elasticjob</groupId>
-    <artifactId>elastic-job-lite-core</artifactId>
+    <artifactId>elasticjob-lite-core</artifactId>
     <version>${latest.release.version}</version>
 </dependency>
 
 <!-- 使用springframework自定义命名空间时引入 -->
 <dependency>
     <groupId>org.apache.shardingsphere.elasticjob</groupId>
-    <artifactId>elastic-job-lite-spring</artifactId>
+    <artifactId>elasticjob-lite-spring</artifactId>
     <version>${latest.release.version}</version>
 </dependency>
 ```
